@@ -1,0 +1,239 @@
+/* ---------- General ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #3333cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: #3333cc;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* ---------- Hero ---------- */
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e6e6ff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #3333cc;
+}
+
+.quick-facts span {
+    display: inline-block;
+    margin: 5px 10px;
+    background-color: #3333cc;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* ---------- Floating shapes ---------- */
+.floating-shapes .shape {
+    position: absolute;
+    opacity: 0.4;
+    animation: float 6s infinite;
+}
+
+.floating-shapes .circle {
+    width: 40px;
+    height: 40px;
+    background: #ff6600;
+    border-radius: 50%;
+    top: 20%;
+    left: 10%;
+}
+
+.floating-shapes .square {
+    width: 50px;
+    height: 50px;
+    background: #00ccff;
+    top: 60%;
+    left: 80%;
+}
+
+.floating-shapes .triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #33cc33;
+    top: 30%;
+    left: 50%;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg);}
+    50% { transform: translateY(-20px) rotate(180deg);}
+    100% { transform: translateY(0) rotate(360deg);}
+}
+
+/* ---------- Reveal text animation ---------- */
+.reveal-text {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: reveal 1s forwards;
+}
+
+#hero h1 { animation-delay: 0.5s; }
+#hero p { animation-delay: 1s; }
+#hero .quick-facts { animation-delay: 1.5s; }
+#hero .download-btn { animation-delay: 2s; }
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Sections ---------- */
+section {
+    padding: 25px 30px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+    /* Section reveal */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section h2 {
+    color: #3333cc;
+    border-bottom: 2px solid #3333cc;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* ---------- Gallery ---------- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ---------- Download Resume ---------- */
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3333cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+    background-color: #5555ee;
+    transform: translateY(-2px);
+}
+
+/* ---------- Footer ---------- */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3333cc;
+    color: white;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3333cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #5555ee;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    section {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Optional: hide floating shapes on mobile */
+    .floating-shapes .shape {
+        display: none;
+    }
+}
