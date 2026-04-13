@@ -4,23 +4,24 @@ function contactAlert() {
 }
 
 // Scroll reveal for sections
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll('section');
 
-// Reveal function
 function revealOnScroll() {
-    const triggerBottom = window.innerHeight * 0.85;
+    const triggerBottom = window.innerHeight * 0.8; // 80% from top
 
     sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
 
-        if (sectionTop < triggerBottom) {
-            section.classList.add("show");
+        if(sectionTop < triggerBottom) {
+            section.classList.add('show'); // Add 'show' class when section is in view
+        } else {
+            section.classList.remove('show'); // Optional: remove when scrolled out
         }
     });
 }
 
-// Run on page load
-window.addEventListener("load", revealOnScroll);
+// Initial call
+revealOnScroll();
 
-// Run on scroll
-window.addEventListener("scroll", revealOnScroll);
+// Listen for scroll events
+window.addEventListener('scroll', revealOnScroll);
