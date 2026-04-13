@@ -4,137 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GUDIPADI SHAKUNTHALA | Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <!-- Lightbox -->
+    <!-- Lightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<header>
-    <nav>
-        <a href="#hero">Home</a> |
-        <a href="#objective">Objective</a> |
-        <a href="#education">Education</a> |
-        <a href="#skills">Skills</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- ---------- Header ---------- -->
+    <header>
+        <nav>
+            <a href="#hero">Home</a> |
+            <a href="#objective">Objective</a> |
+            <a href="#skills">Skills</a> |
+            <a href="#hobbies">Hobbies</a> |
+            <a href="#achievements">Achievements</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section id="hero">
-    <img src="images/profile.jpeg" class="profile-photo">
-    <h1>GUDIPADI SHAKUNTHALA</h1>
-    <p>Computer Science Student | Aspiring Full Stack Developer</p>
+    <!-- ---------- Hero Section ---------- -->
+    <section id="hero">
+        <div class="floating-shapes">
+            <div class="shape circle"></div>
+            <div class="shape square"></div>
+            <div class="shape triangle"></div>
+        </div>
 
-    <div class="quick-facts">
-        <span>Languages: English, Telugu, Hindi</span>
-        <span>B.Tech CSE Student</span>
-        <span>AI & Web Development</span>
-    </div>
+        <img src="images/profile.jpeg" alt="Shakunthala" class="profile-photo reveal-text">
+        <h1 class="reveal-text">GUDIPADI SHAKUNTHALA</h1>
+        <p class="reveal-text">Computer Science Student | Aspiring Full Stack Developer</p>
 
-    <a href="resume/Gudipadi_Shakunthala_Resume.pdf" download class="btn">Download Resume</a>
-</section>
+        <div class="quick-facts reveal-text">
+            <span>Languages: English, Telugu, Hindi</span>
+            <span>Current Role: B.Tech CSE Student</span>
+            <span>Interests: AI, Web Development</span>
+        </div>
 
-<section id="objective">
-    <h2>Objective</h2>
-    <p>
-        Motivated Computer Science student with strong problem-solving skills and a passion for web development and AI.
-        Seeking an opportunity to apply my technical knowledge and contribute to organizational growth.
-    </p>
-</section>
+        <!-- Download Resume -->
+        <a href="resume/Gudipadi_Shakunthala_Resume.pdf" download class="download-btn reveal-text">Download Resume</a>
+    </section>
 
-<section id="education">
-    <h2>Education</h2>
-    <ul>
-        <li>B.Tech (CSE) – CGPA: 8.23 (2022–2026)</li>
-        <li>Intermediate (MPC) – CGPA: 7.29 (2020–2022)</li>
-        <li>SSC – CGPA: 10 (2020)</li>
-    </ul>
-</section>
+    <!-- ---------- Sections ---------- -->
+    <section id="objective">
+        <h2>Objective</h2>
+        <p><p>
+<p>Motivated Computer Science student with strong problem-solving skills and a passion for web development and AI. Seeking an opportunity to apply my technical knowledge and contribute to organizational growth.
+</p>
+    </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Java, Python , SQL</li>
-        <li>HTML, CSS, JavaScript</li>
-    </ul>
-</section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>B.Tech (CSE), Ravindra College of Engineering for Women, JNTUA University – CGPA: 8.23 (2022–2026)</li>
+            <li>Intermediate (MPC), AP Model School & Junior College, Midthur – CGPA: 7.29 (2020–2022)</li>
+            <li>SSC, Z.P. High School, Kadumur – CGPA: 10 (2020)</li>
+        </ul>
+    </section>
 
-<!-- ✅ PROJECTS -->
-<section id="projects">
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Java, Python, SQL</li>
+            <li>Frontend Technologies: HTML, CSS, JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="internship">
+        <h2>Internship / Trainings</h2>
+        <ul>
+            <li>Infosys Springboard Internship 6.0 – AI Project (PriceOptima)
+                <ul>
+                    <li>Built an AI-based pricing system using past sales data.</li>
+                    <li>Technologies used: Python, scikit-learn, Pandas, NumPy.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <section id="projects">
     <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Automated Detection of Document Alterations Using Computer vision and ML</h3>
-        <p>
-            Developed a Machine Learning and Computer Vision based system to detect tampered or altered documents.
-            The system identifies modifications in text, images, signatures, and other elements using image processing techniques.
-        </p>
-
-        <ul>
-            <li>Used OpenCV for image processing and feature extraction.</li>
-            <li>Implemented ML models like SVM and Random Forest.</li>
-            <li>Improved accuracy in detecting forged documents.</li>
-        </ul>
-
-        <p><strong>Technologies:</strong> Python, OpenCV, NumPy, Machine Learning</p>
-
-        <a href="#">GitHub</a> |
-        <a href="#">Live Demo</a>
-    </div>
-
-    <div class="project">
-        <h3>PriceOptima – AI-Based Pricing System (Infosys Springboard)</h3>
-        <p>
-            Developed an AI-based pricing system that analyzes historical sales data to suggest optimal pricing strategies.
-        </p>
-
-        <ul>
-            <li>Performed data analysis using Pandas and NumPy.</li>
-            <li>Built predictive ML models for pricing optimization.</li>
-            <li>Improved decision-making using demand trends.</li>
-        </ul>
-
-        <p><strong>Technologies:</strong> Python, Pandas, NumPy, Scikit-learn</p>
-
-        <a href="#">GitHub</a>
-    </div>
-
+    <ul>
+        <li>
+            <strong>Automated Detection of Document Alterations Using Computer vision and ML</strong>
+            <ul>
+                <li>Developed a system to detect manipulated documents using Machine Learning.</li>
+                <li>Used Python, OpenCV, SVM, Random Forest.</li>
+                <li>
+                    <a href="YOUR_GITHUB_LINK" target="_blank">GitHub</a> |
+                    <a href="YOUR_LIVE_DEMO_LINK" target="_blank">Live Demo</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </section>
 
-<section id="hobbies">
-    <h2>Hobbies</h2>
-    <div class="gallery">
-        <a href="images/reading.jpeg" data-lightbox="hobbies">
-            <img src="images/reading.jpeg">
-        </a>
-        <a href="images/listeningmusic.jpeg" data-lightbox="hobbies">
-            <img src="images/listeningmusic.jpeg">
-        </a>
-        <a href="images/cooking.jpeg" data-lightbox="hobbies">
-            <img src="images/cooking.jpeg">
-        </a>
-    </div>
-</section>
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Application Developer – Web & Mobile Internship, Rooman Technologies (Aug 2025 – Nov 2025)</li>
+            <li>Java Programming Certification – Codetantra</li>
+            <li>Full Stack Development Internship – Smart Bridge Educational Services</li>
+        </ul>
+    </section>
 
-<!-- ✅ CONTACT -->
-<footer id="contact">
-    <h2>Contact</h2>
-    <p><i class="fa fa-envelope"></i> example@com</p>
-    <p><i class="fa fa-phone"></i> 123456789</p>
-    <p>
-        <a href="#">GitHub</a> |
-        <a href="#">LinkedIn</a>
-    </p>
-</footer>
+    <section id="coding-profiles">
+        <h2>Coding Profiles</h2>
+        <ul>
+            <li>CodeChef: <a href="https://www.codechef.com/users/shakunthala" target="_blank">shakunthala22</a></li>
+            <li>LeetCode: <a href="https://leetcode.com/u/shakunthala555/" target="_blank">shakunthala555</a></li>
+            <li>Codetantra: <a href="https://recw.codetantra.com/secure/home.jsp" target="_blank">Codetantra Profile</a></li>
+        </ul>
+    </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <section id="achievements">
+        <h2>Achievements & Extracurricular Activities</h2>
+        <ul>
+            <li>Participant, Adobe India Hackathon</li>
+            <li>Participant, State-Level Essay Writing Competition – Vaaradhi Foundation</li>
+            <li>Solved 500+ problems on CodeChef</li>
+        </ul>
+    </section>
 
+    <section id="hobbies">
+        <h2>Hobbies & Inspirations</h2>
+        <div class="gallery-grid">
+            <a href="images/reading.jpeg" data-lightbox="hobbies" data-title="Reading Books">
+                <img src="images/reading.jpeg" alt="Reading Books">
+            </a>
+            <a href="images/listeningmusic.jpeg" data-lightbox="hobbies" data-title="Listening to Music">
+                <img src="images/listeningmusic.jpeg" alt="Listening to Music">
+            </a>
+            <a href="images/cooking.jpeg" data-lightbox="hobbies" data-title="Cooking">
+                <img src="images/cooking.jpeg" alt="Cooking">
+            </a>
+        </div>
+    </section>
+
+    <section id="declaration">
+        <h2>Declaration</h2>
+        <p>I hereby declare that the above information is true to the best of my knowledge.</p>
+        <p>Place: Kurnool</p>
+        <p><strong>G. Shakunthala</strong></p>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 GUDIPADI SHAKUNTHALA | All rights reserved</p>
+        <button onclick="contactAlert()">Say Hello</button>
+    </footer>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
